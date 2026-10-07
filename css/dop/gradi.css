@@ -37,7 +37,7 @@
 
 .red-layer {
   background:
-    radial-gradient(circle at 80% 70%, rgba(200, 20, 20, 0.7) 0%, transparent 70%),
+    radial-gradient(circle at 80% 70%, rgba(78, 28, 28, 0.7) 0%, transparent 70%),
     radial-gradient(circle at 60% 40%, rgba(255, 40, 40, 0.5) 10%, transparent 60%);
   animation-name: redPulse;
   animation-duration: 20s;
@@ -57,7 +57,7 @@
   }
   50% {
     filter:
-      drop-shadow(0 0 45px rgba(160, 245, 255, 1))
+      drop-shadow(0 0 45px rgb(41, 135, 146))
       drop-shadow(0 0 60px rgba(200, 255, 255, 0.85));
     opacity: 1;
   }
