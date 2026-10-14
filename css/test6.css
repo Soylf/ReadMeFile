@@ -1,0 +1,42 @@
+body {
+    font-family: 'Manrope', 'Inter', sans-serif;
+    background-color: darkolivegreen;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo {
+    font-size: 24px;
+}
+.nav-links {
+display: flex;
+list-style: none;
+gap: 20px;
+}
+
+.nav-links a {
+color: cadetblue;
+}
+.nav-links a:hover {
+    color: chocolate;
+}
+
+.btn-cta {
+    background-color: #007bff;
+    color: wheat;
+    border: none;
+}
+
+.navbar-likaon {
+    display: flex;
+    gap: 30px;
+    height: auto;
+    width: auto;
+}
+.navbar-likaon img {
+    width: 100%;
+    border-radius: 20px;
+}
