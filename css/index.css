@@ -1,7 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #8f685f;
     font-family: 'Marck Script', sans-serif, 'Times New Roman', Times, serif;
-    height: 100vh;
     box-sizing: border-box;
     padding: auto;
     font-size: 20px;
@@ -9,14 +12,19 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
     padding: 10px;
-    height: 200px;
+    height: 250px;
 }
 
 .menu {
+    display: flex;
     gap: 20px;
-    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    align-items:center;
+    top: 0;
+    position: sticky;
+    z-index: 100;
 }
 
 .menu a {
@@ -29,7 +37,9 @@ body {
 }
 
 .header img {
-    border-radius: 120px;
+    max-width: 900px;
+    height: auto;
+    border-radius: 90px;
 }
 
 .hero {
