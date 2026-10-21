@@ -1,39 +1,91 @@
 body {
-    background-color: #000000;
-    color: #151111;
-    font-family: 'Manrope', 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #8f685f;
+    font-family: 'Marck Script', sans-serif, 'Times New Roman', Times, serif;
     height: 100vh;
-    display: flex; /*Гибкая*/
-    text-align: center;
+    box-sizing: border-box;
     padding: auto;
+    font-size: 20px;
 }
 
-.product-card {
-    position: relative;
-    width: auto;
-    height: auto;
-    border-radius: 12px;
-    font-family: sans-serif;
-    background-color: aliceblue;
-
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 200px;
 }
-.product-card product-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px;
-    font-size: 12px;
-    color: white;
 
+.menu {
+    gap: 20px;
+    align-items: center;
 }
-.product-card product-thumb img {
+
+.menu a {
+    transition: background 0.3s ease;
+    background-color: #a38ec6;
+    color: #ffffff; 
+}
+.menu a:hover {
+    background-color: #8f685f;
+}
+
+.header img {
+    border-radius: 120px;
+}
+
+.hero {
+    display: flexbox;
+}
+.btn {
+    background-color: #a38ec6;
+    color: #ffffff; 
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 24px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+  background-color: #8f685f;
+}
+
+.grid-section {
+    padding: 20px;
+}
+
+.grid-section h2 {
+    margin-bottom: 20px;
     width: 100%;
-    border-radius: 4px;
-
+    text-align: center;
 }
-.product-card product-desc {
-    position: absolute;
 
+.cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 80px;
+    overflow-x: auto; 
+}
+
+.card {
+    padding: 40px;
+    flex: 1 1 300px;
+    min-width: 250px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 5px #a38ec6, -2px 5px 5px #a38ec6; 
+}
+.card h3 {
+    text-align: center;
+    font-size: 50px;
+}
+.card p {
+    text-align: center;
+    font-size: 50px;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 120px;
 }
