@@ -68,11 +68,17 @@
         <h2>Ответ привилегированного человека, очень крутого, да-да!!!</h2>
         <h2 class="target-heading">
                 <?php
-                    $databaseFile = __DIR__ . '/php/text_bd/data.txt';
-                    $responseText = file_get_contents($databaseFile);
-                    echo $responseText ?? "Ждите пока Фон Ликаон не напишет вам что-то, плебеи!";
+                    $databaseFileDataTxt = __DIR__ . '/php/text_bd/data.txt';
+                    $databaseTestTxt = __DIR__ . "/php/text_bd/test.txt";
+                    if(is_readable($databaseFileDataTxt)) {
+                        $responseText = file_get_contents($databaseFileDataTxt);
+                    } else {
+                        $responseText = file_get_contents($databaseTestTxt);
+                    }
+
+                    echo $responseText;
                 ?>
-            </h3>
+            </h2>
     </div>
 </body>
 </html>
