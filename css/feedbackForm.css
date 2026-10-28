@@ -9,10 +9,34 @@
     box-shadow: 2px 5px 5px black
 }
 
-.feedback h2 {
+.feedback textarea {
+    width: 300px;
+    height: 300px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: vertical;
+    line-height: 1.5;
+}
 
+.feedback input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    resize: vertical;
+    line-height: 1.5;
 }
 
 .feedback .submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #a38ec6;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
 
+.feedback .submit:hover {
+    background-color: #2196F3;
 }
