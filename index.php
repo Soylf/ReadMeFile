@@ -70,7 +70,7 @@
                 <?php
                     $databaseFileDataTxt = __DIR__ . '/php/text_bd/data.txt';
                     $databaseTestTxt = __DIR__ . "/php/text_bd/test.txt";
-                    if(is_readable($databaseFileDataTxt)) {
+                    if(is_readable($databaseFileDataTxt) && filesize($databaseFileDataTxt) > 0) {
                         $responseText = file_get_contents($databaseFileDataTxt);
                     } else {
                         $responseText = file_get_contents($databaseTestTxt);
