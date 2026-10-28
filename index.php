@@ -66,7 +66,7 @@
 
     <div class="feedback-response">
         <h2>Ответ привилегированного человека, очень крутого, да-да!!!</h2>
-        <h3 class="target-heading">
+        <h2 class="target-heading">
                 <?php
                     $databaseFile = __DIR__ . '/php/text_bd/data.txt';
                     $responseText = file_get_contents($databaseFile);
