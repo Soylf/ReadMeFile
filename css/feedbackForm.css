@@ -1,0 +1,18 @@
+.feedback {
+    background-color: #8f685f;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 2px 5px 5px black
+}
+
+.feedback h2 {
+
+}
+
+.feedback .submit {
+
+}

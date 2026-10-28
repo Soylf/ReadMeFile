@@ -11,8 +11,7 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/dop/gradi.css">
-
- 
+    <link rel="stylesheet" href="css/body/masterBody.css">
 </head>
 <body>
   <div id="mmm"></div>
@@ -25,6 +24,7 @@
         <a href="#mmm">Главная</a>
         <a href="#cont">Трэки ликаона</a>
         <a href="#hero">Об трэках мсиЛикаона</a>
+        <a href="feedbackForm.html"> Форма обратной связи</a>
       </div>
 
     <div class="header">
@@ -63,5 +63,15 @@
       </div>
     </div>
 
+    <div class="feedback-response">
+        <h2>Ответ привилегированного человека, очень крутого, да-да!!!</h2>
+        <h3 class="target-heading">
+                <?php
+                    $databaseFile = __DIR__ . '/php/text_bd/data.txt';
+                    $responseText = file_get_contents($databaseFile);
+                    echo $responseText ?? "Ждите пока Фон Ликаон не напишет вам что-то, плебеи!";
+                ?>
+            </h3>
+    </div>
 </body>
 </html>

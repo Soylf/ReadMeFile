@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/dop/gradi.css">
+    <link rel="stylesheet" href="css/feedbackForm.css">
+    <link rel="stylesheet" href="css/body/masterBody.css">
+
+</head>
+<body>
+    <div class="gradient-background">
+        <div class="blue-layer"></div>
+        <div class="red-layer"></div>
+    </div>
+
+    <div class="feedback" id="feedback">
+        <h2>Форма обратной связи только для привилегированного человека, то бишь одного</h2>
+        <form action="php/feedbackForm.php" method="POST">
+            <p>
+                <label for="user_name">Ваше имя:</label><br>
+                <input type="text" name="user_name" id="user_name" class="user_name" required>
+            </p>
+            <p>
+                <label for="user_message">Ваше сообщение</label><br>
+                <textarea id="user_message" name="user_message" class="user_message"></textarea>
+            </p>
+            <button class="submit" type="submit">Отправить</button>
+        </form>
+    </div>
+
+</body>
+</html>

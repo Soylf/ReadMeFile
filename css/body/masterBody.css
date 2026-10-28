@@ -1,0 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #8f685f;
+    font-family: 'Marck Script', sans-serif, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    padding: auto;
+    font-size: 20px;
+}
