@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/dop/gradi.css">
-    <link rel="stylesheet" href="css/feedbackForm.css">
-    <link rel="stylesheet" href="css/body/masterBody.css">
-    <link rel="stylesheet" href="css/menu.css">
-
-</head>
+<?php require 'php/includes/feedback/header.php'; ?>
 <body>
-    <div class="gradient-background">
-        <div class="blue-layer"></div>
-        <div class="red-layer"></div>
-    </div>
+    <?php require 'php/includes/gradient.php'; ?>
 
     <div class="menu">
         <a href="index.php"> Домой</a>

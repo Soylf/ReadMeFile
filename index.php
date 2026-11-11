@@ -1,32 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<?php require 'php/includes/index/header.php'; ?>
 
-    <meta charset="UTF-8">
-    <title>карточка товара</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/dop/gradi.css">
-    <link rel="stylesheet" href="css/body/masterBody.css">
-    <link rel="stylesheet" href="css/menu.css">
-</head>
 <body>
   <div id="mmm"></div>
-  <div class="gradient-background">
-    <div class="blue-layer"></div>
-    <div class="red-layer"></div>
-  </div>
+
+  <?php require 'php/includes/gradient.php'; ?>
 
   <div class="menu">
         <a href="#mmm">Главная</a>
         <a href="#cont">Трэки ликаона</a>
         <a href="#hero">Об трэках мсиЛикаона</a>
         <a href="#over">Внушать что сказал Ликаон</a>
-        <a href="feedbackForm.html"> Форма обратной связи</a>
+        <a href="feedbackForm.php"> Форма обратной связи</a>
       </div>
 
     <div class="header">
@@ -68,6 +52,7 @@
     <div class="feedback-response">
         <h2>Ответ привилегированного человека, очень крутого, да-да!!!</h2>
         <h2 class="target-heading">
+
                 <?php
                     $databaseFileDataTxt = __DIR__ . '/php/text_bd/data.txt';
                     $databaseTestTxt = __DIR__ . "/php/text_bd/test.txt";
@@ -79,8 +64,8 @@
 
                     echo $responseText;
                 ?>
+
             </h2>
     </div>
     <div id="over"></div>
-</body>
-</html>
+    <?php require 'php/includes/index/footer.php'; ?>
