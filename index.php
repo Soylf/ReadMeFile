@@ -28,25 +28,7 @@
       <h2>Список трэков Ликаона</h2>
 
       <div class="cont" id="cont">
-        <div class="card">
-          <h3>Дырявый</h3>
-          <img src="img/likaon1.jpg" alt="desc1">
-          <p>Он продырявил своим... Продолжение следует</p>
-        </div>
-
-        <div class="card">
-          <h3>ВелЛи</h3>
-          <img src="img/likaon2.jpg" alt="desc2">
-          <p>Ликаон и Велина встретились в пабе и он показал свой... Прожолжение следует</p>
-        </div>
-
-        <div class="card">
-          <h3>Выйти из игры</h3>
-          <img src="img/likaon3.jpg" alt="desc3">
-          <p>У него настолько был большой что он вышел за игру</p>
-        </div>
-
-      </div>
+        <?php require 'php/includes/index/card.php'; ?>
     </div>
 
     <div class="feedback-response">
